@@ -15,10 +15,10 @@ export default function Home() {
     setSelected((prev) => prev + 1);
   };
   const tabs = [
-    <DetailsCollection />,
-    <DocumentCollection />,
-    <Statement />,
-    <Availability />,
+    <DetailsCollection key={"details"} />,
+    <DocumentCollection key={"documents"} />,
+    <Statement key={"statements"} />,
+    <Availability key={"availability"} />,
   ];
   return (
     <div className="w-full bg-gray-100 relative">
