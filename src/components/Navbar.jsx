@@ -7,7 +7,7 @@ const Navbar = ({ curSection = 0 }) => {
       <div className="flex">
         {sections.map((section, index) => {
           return (
-            <div className="flex items-center justify-center">
+            <div key={section} className="flex items-center justify-center">
               {
                 <div
                   className={`w-6 mr-2 h-6 border border-gray-400 rounded-full text-white flex items-center justify-center ${
